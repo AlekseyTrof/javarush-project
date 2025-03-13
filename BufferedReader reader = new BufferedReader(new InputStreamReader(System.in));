@@ -1,0 +1,20 @@
+        String destinationFileName = reader.readLine();
+
+        BufferedWriter writer = new BufferedWriter(new FileWriter(destinationFileName));
+
+        StringBuilder builder = new StringBuilder();
+
+        String s = "";
+        while (!s.equals("exit")) {
+            s = reader.readLine();
+            builder.append(s).append("\n");
+        }
+
+        writer.write(builder.toString());
+        writer.close();C:\Users\Aleksey\Desktop\222\123.txt
+1111
+2222
+3333
+4444
+5555
+exit
